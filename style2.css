@@ -1,0 +1,73 @@
+:root {
+    font-size: 16px;
+
+}
+
+.element {
+    height: 500px;
+    width: 500px;
+    display: grid;
+    place-items: center;
+    border: none;
+    background-size: 200%;
+    animation: bg 5s infinite alternate;
+}
+
+@keyframes bg {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: yellow;
+    }
+}
+
+@keyframes ModificareTitlu {
+    0% {
+        color: red;
+        font-size: 1rem;
+    }
+
+    50% {
+        color: aqua;
+        font-size: 2rem;
+    }
+
+    100% {
+        color: yellow;
+        font-size: 3rem;
+    }
+}
+
+
+.title {
+
+    animation: ModificareTitlu 7s infinite alternate;
+}
+
+@media screen and (max-width: 1023px) {
+    .title {
+        animation: ModificareTitlu 7s infinite alternate
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        animation: ModificareTitlu 7s infinite alternate
+    }
+}
+
+
+.title2 {
+    animation: ModificareTitlu 7s infinite alternate;
+}
+
+
+@media screen (max-width: 1023px) and (min-width: 481px) {
+    .title
+}
+
+@media screen and (max-width: 480px) {
+    .title
+}

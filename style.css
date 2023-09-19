@@ -1,0 +1,40 @@
+.shadowBottomLeft {
+    height: 150px;
+    width: 150px;
+    margin: 8px;
+    border: 1px solid green;
+    box-shadow: -4px 4px 8px yellow;
+}
+
+.shadowTopRight {
+    height: 150px;
+    width: 150px;
+    margin: 8px;
+    border: 1px solid green;
+    box-shadow: 4px -4px 8px yellow;
+}
+
+.spiner {
+    height: 150px;
+    width: 150px;
+    border: 3px solid green;
+    border-radius: 50%;
+    border-left: 3px solid yellow;
+    animation: spiner 3s linear infinite;
+}
+
+@keyframes spiner {
+    0% {
+        transform: rotate (0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
